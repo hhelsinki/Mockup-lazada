@@ -59,7 +59,7 @@
 //PC
 @media only screen and (min-width:1279px) and (min-height:719px) {
     .home__main {height:auto;}
-    .home__footer {position:relative;}
+    .home__footer { height:auto; position:relative;}
 
     .home__search {max-width:600px; margin:0 auto;}
     .home__menu {margin-top:15rem;}
