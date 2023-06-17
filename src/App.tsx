@@ -43,7 +43,7 @@ function App() {
             <Slide indicators={true} ref={slideRef} cssClass='poster' >
               {poster.map((el: any, i: number) => {
                 return <div key={i} style={{ textAlign: 'center', fontSize: '30px' }}>
-                  <img src={'http://localhost:3000/' + el.img} alt="" className="img bd-df" />
+                  <img src={el.img} alt="" className="img bd-df" />
                 </div>;
               })}
             </Slide>
