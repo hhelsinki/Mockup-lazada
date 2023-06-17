@@ -1,0 +1,67 @@
+
+.home__header { height:12vh; width:100%; top:0; z-index: 11;}
+.home__main {height:80vh;}
+.home__footer { height:7.9vh; width:100%; bottom:0; position: absolute;}
+.home__footer-pc { grid-template-columns: auto auto auto auto;
+}
+
+.home__search {
+    span {font-size: 1.5rem; left: 5px; top: 3px;}
+    input {padding: 8px 0; width: 100%; border-radius: 15px; border: 1px solid red; text-indent: 30px; }
+    button {padding: 5px 8px; border-radius: 12px; background: pink; border-width: 0; right: 3px; top: 3px;}
+}
+.home__flashsell {grid-template-columns: auto auto auto;
+}
+.home__flashsell-item {background-color: rgba(255, 255, 255, 0.8); text-align: center; padding:0 5px 5px 5px; }
+.home__flashsell-progress {background: pink; height: 20px; width:100%; border-radius: 8px; 
+   div { background: red; padding: 2px 0; width: 80%; z-index: 0; border-radius: 8px; font-size: .8rem; color: white; }
+}
+.home__mall { padding-bottom:5px;
+    p {margin:0; font-size:.8rem;} 
+    &.left, &.center {width:25%;}
+    &.right {width:49%;
+        img {width:49%;}
+    }
+}
+.home__quick-navi, .home__menu { white-space: nowrap;
+    div {width:28%; padding:0 5px; display:inline-block; text-align: center;}
+}
+.home__all {grid-template-columns: auto auto;
+    div { margin:5px; padding:5px; border-radius:12px; background-color: var(--bg-secondary);
+        img {border-radius:12px;}
+    }
+}
+
+
+.home__footer-crt { grid-template-columns: auto auto auto auto; 
+    div { background-color: rgba(255, 255, 255, 0.8); text-align: center;
+        p {margin-top:0;}
+    }
+}
+.home__footer-txt { @extend .home__footer-crt;
+}
+
+
+
+//Tablet
+@media only screen and (min-width:599px) and (min-height:559px) {
+    .home__search { margin-top:3rem;}
+    .home__menu, .home__quick-navi {margin-top:2rem;
+        div {width: 20%;}
+    }
+    .home__quick-navi {margin-bottom:2rem;}
+    .home__all {grid-template-columns: auto auto auto;}
+    .home__footer-crt {
+        div { margin-top:1rem; }
+    }
+}
+
+//PC
+@media only screen and (min-width:1279px) and (min-height:719px) {
+    .home__main {height:auto;}
+    .home__footer {position:relative;}
+
+    .home__search {max-width:600px; margin:0 auto;}
+    .home__menu {margin-top:15rem;}
+    .home__all {grid-template-columns: auto auto auto auto;}
+}
